@@ -1,0 +1,134 @@
+.authentication-page {
+	display: flex;
+	padding: 32px;
+	gap: 16px;
+	min-height: 100vh;
+
+	.side-header {
+		width: min(768px, 45%);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		border-radius: 40px;
+		background-image: url("./images/side-background.webp");
+		background-size: cover;
+
+		img {
+			margin: auto 0;
+		}
+	}
+
+	main {
+		flex: 1;
+		margin: auto 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 24px;
+	}
+
+	h1,
+	a {
+		color: var(--pink-color);
+	}
+
+	form {
+		width: min(360px,100%);
+		margin-top: 8px;
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		.input-container {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			gap: 8px;
+		}
+		#password[type="password"] {
+			font-family: Verdana;
+			line-height: 18px;
+			letter-spacing: 0.125em;
+		}
+		svg.show-password-icon {
+			position: absolute;
+			left: 8px;
+			bottom: 9px;
+			cursor: pointer;
+
+			&:hover {
+				path {
+					fill: var(--dark-grey-color);
+				}
+			}
+		}
+		label {
+			font-size: 14px;
+			font-weight: 600;
+		}
+		button {
+			padding: 14px 0;
+			font-size: 14px;
+		}
+	}
+
+	.input-container input {
+		outline: none;
+		border: 2px solid var(--light-grey-color);
+		border-radius: 10px;
+		padding: 12px;
+		font-size: 14px;
+	}
+
+	a:hover {
+		filter: saturate(150%);
+	}
+
+	p,
+	label {
+		color: var(--dark-grey-color);
+	}
+
+	.social-btns-container {
+		display: flex;
+		gap: 24px;
+		svg {
+			width: 48px;
+			height: 48px;
+			filter: drop-shadow(4px 4px 2px rgba(0, 0, 0, 0.2));
+			cursor: pointer;
+		}
+	}
+
+	.or-line {
+		margin-top: 8px;
+		overflow: hidden;
+		text-align: center;
+	}
+
+	.or-line:before,
+	.or-line:after {
+		background-color: var(--light-grey-color);
+		content: "";
+		display: inline-block;
+		height: 1px;
+		position: relative;
+		vertical-align: middle;
+		width: 50%;
+	}
+
+	.or-line:before {
+		right: 20px;
+		margin-left: -50%;
+	}
+
+	.or-line:after {
+		left: 20px;
+		margin-right: -50%;
+	}
+
+	@media (max-width:800px) {
+		.side-header {
+			display: none;
+		}
+	}
+}
