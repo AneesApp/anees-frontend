@@ -4,7 +4,7 @@ import victoryIcon from "../../images/anees-images/victory.webp";
 import { ReactComponent as MenuIcon } from "../../images/misc/menu-icon.svg";
 import { ReactComponent as CloseIcon } from "../../images/misc/close-icon.svg";
 import { ReactComponent as CloudIcon } from "../../images/misc/cloud.svg";
-
+import { Link } from "react-router-dom";
 import "./style.css";
 
 const Main = React.lazy(() => import("./Main"));
@@ -57,7 +57,9 @@ function AppHeader(props) {
 			<nav>
 				<img src={navbarLogo} alt="Anees" />
 				<NavItems />
-				<button className="btn-login btn-pink">دخول</button>
+				<Link to="/login" className="btn-login">
+					<button className="btn-pink">دخول</button>
+				</Link>
 				<MenuIcon className="menu-icon" onClick={() => props.setMenuDisplay(true)} />
 			</nav>
 			<div className="hero-section">
@@ -68,7 +70,9 @@ function AppHeader(props) {
 						للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير من الملاحظات او
 						الانتقادات للتصميم الاساسي.
 					</p>
-					<button className="btn-grey">جرب الآن</button>
+					<Link to="/register">
+						<button className="btn-grey">جرب الآن</button>
+					</Link>
 				</div>
 				<img src={victoryIcon} />
 				<div class="cloud-container">
