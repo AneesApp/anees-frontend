@@ -34,7 +34,7 @@ export default function Login() {
 							<input type="checkbox" id="remember-me" />
 							<label htmlFor="remember-me">تذكرني</label>
 						</div>
-						<Link to="/reset-password">نسيت كلمة المرور؟</Link>
+						<Link to="/forgot-password">نسيت كلمة المرور؟</Link>
 					</div>
 					<p className="or-line">أو</p>
 				</form>
