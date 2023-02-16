@@ -28,3 +28,52 @@ body {
 a {
 	text-decoration: none;
 }
+
+.input-container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+input[type="password"] {
+	font-family: Verdana;
+	line-height: 18px;
+	letter-spacing: 0.125em;
+}
+
+svg.show-password-icon {
+	position: absolute;
+	left: 8px;
+	bottom: 9px;
+	cursor: pointer;
+}
+
+svg.show-password-icon:hover > path {
+	fill: var(--dark-grey-color);
+}
+
+button {
+	border: none;
+	border-radius: 12px;
+	padding: 21px 49px;
+	font-size: 20px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+button:hover {
+	filter: saturate(150%);
+}
+
+.btn-grey {
+	box-shadow: 0 0 8px var(--dark-grey-color);
+	background-color: var(--dark-grey-color);
+	color: var(--pink-color);
+}
+
+.btn-pink {
+	box-shadow: 0 0 8px var(--pink-color);
+	background-color: var(--pink-color);
+	color: var(--dark-grey-color);
+}
