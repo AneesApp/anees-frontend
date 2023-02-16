@@ -106,7 +106,7 @@ function Reset() {
 				<ShowHidePassword className="show-password-icon" onClick={togglePasswordVisibility} />
 			</div>
 			<div className="input-container">
-				<label htmlFor="password-confirm">الرقم السري</label>
+				<label htmlFor="password-confirm">تأكيد الرقم السري</label>
 				<input id="password-confirm" name="password-confirm" type={isPasswordVisible ? "text" : "password"} />
 				<ShowHidePassword className="show-password-icon" onClick={togglePasswordVisibility} />
 			</div>
