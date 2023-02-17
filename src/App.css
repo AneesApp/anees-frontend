@@ -24,10 +24,19 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
-
-a {
-	text-decoration: none;
+.card {
+	width: min(490px, 100%);
+	margin: auto 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 42px;
+	padding: 42px;
+	border-radius: 24px;
+	background-color: white;
+	box-shadow: 0px 0px 8px rgba(51, 51, 51, 0.2);
 }
+
 
 .input-container {
 	position: relative;
@@ -51,6 +60,10 @@ svg.show-password-icon {
 
 svg.show-password-icon:hover > path {
 	fill: var(--dark-grey-color);
+}
+
+a {
+	text-decoration: none;
 }
 
 button {
