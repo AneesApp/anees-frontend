@@ -28,7 +28,7 @@ export default function Login() {
 						<input id="password" name="password" type={isPasswordVisible ? "text" : "password"} required></input>
 						<ShowHidePassword className="show-password-icon" onClick={togglePasswordVisibility} />
 					</div>
-					<button className="btn-register btn-pink">إنشاء حساب</button>
+					<button className="btn-register btn-pink">تسجيل دخول</button>
 					<div className="login-options">
 						<div className="checkbox-container">
 							<input type="checkbox" id="remember-me" />
